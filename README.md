@@ -1,6 +1,6 @@
 ### Hi, I'm Hassan.
 
-I build production Claude systems and automation infrastructure. Live products, not prototypes. I work with founders, agencies, and professional services firms that need software still holding up after the demo ends.
+I build production Claude systems and full-stack SaaS infrastructure. Live products, not prototypes. I work with founders, agencies, and professional services firms that need software still holding up after the demo ends.
 
 Based in Faisalabad, Pakistan. Working hours run US EST / PST.
 
@@ -8,11 +8,14 @@ Based in Faisalabad, Pakistan. Working hours run US EST / PST.
 
 ### What I've shipped
 
-**[ScripturePath.ai](https://scripturepath.ai).** Live Claude-powered scripture study SaaS. Multi-phase reasoning, per-section validation, verified-source retrieval, guardrails that hold up against prompt injection. Stack: Next.js, Supabase, Vercel, Resend, Claude API.
+**[ScripturePath.ai](https://scripturepath.ai).** Live subscription SaaS that generates full 10-section personalized Bible studies from any scripture passage. Multi-phase LLM pipeline with model tiering (Claude Opus for doctrinal reasoning, Sonnet for metadata, Haiku for utility sections), 4 parallel Anthropic API calls per generation streamed to the client as NDJSON. Nine hard-coded theological guardrails baked into every prompt with regex-checked outputs. Study result caching with normalized cache keys. Prompt caching for the static rules block at 10% input cost. Full Stripe subscription billing with trial support. Verified-source scripture retrieval from vendored KJV (never model-generated). Caught and patched a pre-launch RLS vulnerability that would have let any authenticated user grant themselves unlimited credits.
+*Stack: Next.js 16, React 19, TypeScript, Tailwind v4, Supabase (Postgres + RLS), Anthropic SDK, Stripe, Resend, Vercel.*
 
-**Business Succession Group portal.** Internal M&A firm portal I've been building since August 2025 for a Canadian advisory practice. Deal lifecycle, financial reporting with role-based access, CRM integration, third-party data pipelines. Client-facing, private (portal.businesssuccessiongroup.com).
+**Business Succession Group portal (portal.businesssuccessiongroup.com).** Live gated B2B acquisition marketplace connecting qualified buyers with confidential M&A deals for a Canadian advisory firm. Three-tier freemium model (public pipeline → verified buyer → $500/year premium with early access). Digital NDA signature capture with in-portal PDF generation, 6-step buyer intake form, admin moderation queues, bi-directional Zoho CRM sync via OAuth edge functions. Multi-layered RBAC via Supabase RLS with BEFORE-triggers preventing privilege escalation, a public "blind columns" view separated from confidential data at the database layer, and full Stripe subscription billing with webhook-driven tier changes. Real-time admin notification feed with per-admin read state.
+*Stack: React 19, Vite, TypeScript, Tailwind v4, Supabase (Postgres + RLS + storage + edge functions), Stripe, Zoho CRM, Resend, react-signature-canvas, jspdf.*
 
-**Financial Reporting Application.** Next.js 16 with Supabase, Upstash Redis, and MongoDB integration. Admin/Manager/Viewer RBAC, CSV export, saved views. Deployed on Vercel.
+**Reporting and operations platform.** Internal reporting product aggregating transaction data across MongoDB (source of truth) and Supabase into three interconnected dashboards. Custom incremental MongoDB-to-Postgres sync engine (3 pipelines, 72 migrations of schema evolution). Admin-defined custom columns using Postgres expression indexes over jsonb paths, making arbitrary MongoDB document fields sortable and filterable. Upstash Redis for per-user rate limiting and column-library caching. Full RBAC (Admin/Manager/Viewer plus custom roles) with role-scoped CSV export and per-user saved views. Fixie SOCKS proxy for IP-restricted MongoDB Atlas access.
+*Stack: Next.js 16, React 18, TypeScript, Supabase, MongoDB, Upstash Redis, Recharts, TanStack Query, TanStack Table.*
 
 **[StellaFlo](https://stellaflo.com).** My own productized service for digital agency owners.
 
@@ -51,31 +54,37 @@ Most of my production code lives in client GitHub organizations, not this accoun
 
 When a client hires me to build production systems, the code belongs in their org so their business continuity isn't tied to my availability. It's standard for senior contract work and non-negotiable under most NDAs.
 
-For technical evaluation I run architecture walk-throughs live on a call, with screen-share into the actual client repos (with the client's written read-only permission). That gives a much sharper read than static repo browsing anyway. Happy to walk through decisions, tradeoffs, and code quality on any of the projects above.
+For technical evaluation I run architecture walk-throughs live on a call with screen-share into the actual client repos (with the client's written read-only permission). That gives a much sharper read than static repo browsing anyway. Happy to walk through decisions, tradeoffs, and code quality on any of the projects above.
 
 ---
 
 ### Stack I ship on daily
 
-**AI:** Claude Code (daily driver for architecture and pair-programming), Claude API direct, Claude Agent SDK, Claude Skills, prompt engineering, anti-hallucination guardrail design, structured LLM output, human-in-the-loop review patterns
+**AI:** Claude Code (daily driver for architecture and pair-programming), Anthropic SDK direct, Claude Agent SDK, Claude Skills, prompt caching, prompt engineering, anti-hallucination guardrail design, structured LLM output with JSON schema validation, streaming responses (NDJSON), human-in-the-loop review patterns
 
-**Frontend:** React 19, Next.js 15/16, TypeScript, Tailwind v4, Vite, shadcn/ui
+**Frontend:** React 19, Next.js 15/16, TypeScript, Tailwind v4, Vite, shadcn/ui, Radix UI, Recharts, TanStack Query, TanStack Table
 
-**Backend:** Supabase (Auth, RLS, Edge Functions, Realtime, Storage), PostgreSQL, Deno, Node.js
+**Backend:** Supabase (Auth, Postgres with RLS, storage, Edge Functions, Realtime), MongoDB, Deno, Node.js
 
-**Infrastructure:** Vercel, Netlify, Docker, GitHub Actions
+**Payments and email:** Stripe (subscriptions, trials, webhooks, customer portal), Resend
+
+**Infrastructure:** Vercel, Netlify, GitHub Actions, Upstash Redis
 
 **Automation:** n8n (primary), Zapier, Make, Zoho Flow, Pipedream
 
 **CRM:** Zoho, HubSpot, GoHighLevel, Salesforce (mid-market)
 
-**Integrations:** Stripe, Resend, Anthropic API, OpenAI API, Apple HealthKit, financial data APIs
+---
+
+### Where I don't ship
+
+Native iOS / Android publishing and Apple App Store / Google Play submissions are the one lane I don't take on solo. Web and PWA on Vercel or Netlify I ship end-to-end. For projects that need a native mobile front-end, I pair with a mobile specialist who owns the native side while I stay on web, Supabase, Claude, and API integrations. HealthKit and Health Connect at the API level are fine either way (backend / edge function side).
 
 ---
 
 ### Currently
 
-Ongoing with a Canadian M&A advisory (August 2025 to present). Building [StellaFlo](https://stellaflo.com) alongside. Room for one more serious client engagement, Claude SaaS or senior full-stack.
+Ongoing with Business Succession Group (August 2025 to present). Building [StellaFlo](https://stellaflo.com) alongside. Room for one more serious client engagement, Claude SaaS or senior full-stack.
 
 ### Get in touch
 
