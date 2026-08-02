@@ -48,6 +48,18 @@ Selected numbers from public portfolio work:
 
 ---
 
+### Deep-dive case studies
+
+Public writeups of the engineering patterns behind the projects above. No client code, no client data, no proprietary business logic. Just architecture:
+
+- **[Production Claude SaaS patterns](https://github.com/ehassannawaz/case-study-claude-saas-patterns)** covers multi-phase pipelines, non-overridable guardrails, verified-source retrieval, and human-in-the-loop review. Distilled from the ScripturePath.ai build.
+- **[Claude + Google Workspace document automation](https://github.com/ehassannawaz/case-study-claude-document-automation)** covers the Google Sheets to Slides deck-generation pipeline: grounding contracts, prompt caching for 75% cost reduction, model tiering per output, chart re-linking as a Slides API workaround, stateful bot UX with background execution.
+- **[Gated B2B marketplace on Supabase](https://github.com/ehassannawaz/case-study-gated-marketplace-supabase)** covers tiered RLS, column-level access via views, privilege-escalation triggers, in-portal NDA capture with PDF generation, Stripe subscription tiers driven by webhook, bi-directional Zoho CRM sync.
+- **[MongoDB + Supabase operations dashboard](https://github.com/ehassannawaz/case-study-mongo-supabase-ops-dashboard)** covers custom incremental sync between MongoDB and Postgres, admin-defined custom columns via jsonb expression indexes, Redis-cached hot-path lookups, RBAC as data, and RBAC-safe CSV export.
+- **[Agency automation patterns](https://github.com/ehassannawaz/case-study-agency-automation)** covers n8n/CRM reliability patterns from 3,614 hours of Upwork production work: Zapier-to-n8n migrations, stage-derived pipeline automation, idempotent webhooks, credential hygiene, monitoring against silent failures.
+
+---
+
 ### Why the repo list here is short
 
 Most of my production code lives in client GitHub organizations, not this account. That's on purpose.
