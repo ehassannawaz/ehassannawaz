@@ -98,8 +98,11 @@ Native iOS / Android publishing and Apple App Store / Google Play submissions ar
 
 Ongoing with Business Succession Group (August 2025 to present). Building [StellaFlo](https://stellaflo.com) alongside. Room for one more serious client engagement, Claude SaaS or senior full-stack.
 
+**Book a 30-min Agency Systems Audit call:** [calendly.com/ehassannawaz/agency-systems-audit](https://calendly.com/ehassannawaz/agency-systems-audit)
+
 ### Get in touch
 
+- **Book a call:** [Agency Systems Audit (30 min)](https://calendly.com/ehassannawaz/agency-systems-audit)
 - Website: [stellaflo.com](https://stellaflo.com)
 - LinkedIn: [linkedin.com/in/ehassannawaz](https://www.linkedin.com/in/ehassannawaz)
 - Upwork: [upwork.com/freelancers/ehassannawaz](https://www.upwork.com/freelancers/ehassannawaz)
