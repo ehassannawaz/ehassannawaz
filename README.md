@@ -2,7 +2,7 @@
 
 I build production Claude systems and full-stack SaaS infrastructure. Live products, not prototypes. I work with founders, agencies, and professional services firms that need software still holding up after the demo ends.
 
-Based in Faisalabad, Pakistan. Working hours run US EST / PST.
+Right now I'm the AI Automation Engineer at [Prestige Ride](https://www.prestigeride.com), a US chauffeur and black car company, on-site in Lahore. Based in Pakistan, working US EST / PST hours.
 
 ---
 
@@ -14,8 +14,10 @@ Based in Faisalabad, Pakistan. Working hours run US EST / PST.
 **Business Succession Group portal (portal.businesssuccessiongroup.com).** Live gated B2B acquisition marketplace connecting qualified buyers with confidential M&A deals for a Canadian advisory firm. Three-tier freemium model (public pipeline → verified buyer → $500/year premium with early access). Digital NDA signature capture with in-portal PDF generation, 6-step buyer intake form, admin moderation queues, bi-directional Zoho CRM sync via OAuth edge functions. Multi-layered RBAC via Supabase RLS with BEFORE-triggers preventing privilege escalation, a public "blind columns" view separated from confidential data at the database layer, and full Stripe subscription billing with webhook-driven tier changes. Real-time admin notification feed with per-admin read state.
 *Stack: React 19, Vite, TypeScript, Tailwind v4, Supabase (Postgres + RLS + storage + edge functions), Stripe, Zoho CRM, Resend, react-signature-canvas, jspdf.*
 
-**Reporting and operations platform.** Internal reporting product aggregating transaction data across MongoDB (source of truth) and Supabase into three interconnected dashboards. Custom incremental MongoDB-to-Postgres sync engine (3 pipelines, 72 migrations of schema evolution). Admin-defined custom columns using Postgres expression indexes over jsonb paths, making arbitrary MongoDB document fields sortable and filterable. Upstash Redis for per-user rate limiting and column-library caching. Full RBAC (Admin/Manager/Viewer plus custom roles) with role-scoped CSV export and per-user saved views. Fixie SOCKS proxy for IP-restricted MongoDB Atlas access.
-*Stack: Next.js 16, React 18, TypeScript, Supabase, MongoDB, Upstash Redis, Recharts, TanStack Query, TanStack Table.*
+**Prestige Ride reporting platform.** The company's internal reporting product, which I built solo, aggregating transaction data across MongoDB (source of truth) and Supabase into three interconnected dashboards. Custom incremental MongoDB-to-Postgres sync engine (3 pipelines, 72 migrations of schema evolution). Admin-defined custom columns using Postgres expression indexes over jsonb paths, making arbitrary MongoDB document fields sortable and filterable. Upstash Redis for per-user rate limiting and column-library caching. Full RBAC (Admin/Manager/Viewer plus custom roles) with role-scoped CSV export and per-user saved views. Fixie SOCKS proxy for IP-restricted MongoDB Atlas access. First built on Next.js, then rebuilt as a React front end on a Laravel (PHP) API over Supabase Postgres.
+*Stack: React, Laravel (PHP), Supabase (Postgres), MongoDB, Upstash Redis, Recharts, TanStack Query, TanStack Table. Originally Next.js 16.*
+
+**Prestige Ride automations.** n8n workflows for the company newsletter and Authorize.net payment verification calls, plus GoHighLevel automation workflows and validated data imports into the CRM.
 
 **[StellaFlo](https://stellaflo.com).** My own productized service for digital agency owners.
 
@@ -25,7 +27,7 @@ Based in Faisalabad, Pakistan. Working hours run US EST / PST.
 
 Public and verifiable:
 
-- **Upwork.** Top Rated, Top 10% of Automation Talent, 100% Job Success. 3,614 hours across 90 projects. $60,000+ earned. [upwork.com/freelancers/ehassannawaz](https://www.upwork.com/freelancers/ehassannawaz)
+- **Upwork.** Top Rated, Top 10% of Automation Talent, 100% Job Success. 3,614 hours across 100 projects. $60,000+ earned. [upwork.com/freelancers/ehassannawaz](https://www.upwork.com/freelancers/ehassannawaz)
 - **Contra.** 5.00 rating, $50,000+ earned on-platform. [contra.com/ehassannawaz](https://contra.com/ehassannawaz)
 - **LinkedIn.** Named recommendations from Scott Duke and Eve Duke of Business Succession Group. [linkedin.com/in/ehassannawaz](https://www.linkedin.com/in/ehassannawaz)
 
