@@ -2,7 +2,7 @@
 
 I build production Claude systems and full-stack SaaS infrastructure. Live products, not prototypes. I work with founders, agencies, and professional services firms that need software still holding up after the demo ends.
 
-Right now I'm the AI Automation Engineer at [Prestige Ride](https://www.prestigeride.com), a US chauffeur and black car company, on-site in Lahore. Based in Pakistan, working US EST / PST hours.
+Right now I'm the AI Automation Engineer at [OPT Link Hub](https://www.optlinkhub.com), on-site in Lahore, building the internal platforms and automations for [Prestige Ride](https://www.prestigeride.com), a US chauffeur and black car company. Based in Pakistan, working US EST / PST hours.
 
 ---
 
