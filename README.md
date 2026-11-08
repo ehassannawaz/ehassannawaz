@@ -1,6 +1,6 @@
 ### Hi, I'm Hassan.
 
-I build production Claude systems and full-stack SaaS infrastructure. Live products, not prototypes. I work with founders, agencies, and professional services firms that need software still holding up after the demo ends.
+I take apps built fast with AI tools (Lovable, Bolt, Replit, Base44, Claude), or left half-done by a developer, live and safe: logins, payments, database rules, hosting and monitoring. I also build production Claude systems and full-stack SaaS. Live products, not prototypes.
 
 Right now I'm the AI Automation Engineer at [OPT Link Hub](https://www.optlinkhub.com), on-site in Lahore, building the internal platforms and automations for [Prestige Ride](https://www.prestigeride.com), a US chauffeur and black car company. Based in Pakistan, working US EST / PST hours.
 
@@ -11,7 +11,7 @@ Right now I'm the AI Automation Engineer at [OPT Link Hub](https://www.optlinkhu
 **[ScripturePath.ai](https://scripturepath.ai).** Live subscription SaaS that generates full 10-section personalized Bible studies from any scripture passage. Multi-phase LLM pipeline with model tiering (Claude Opus for doctrinal reasoning, Sonnet for metadata, Haiku for utility sections), 4 parallel Anthropic API calls per generation streamed to the client as NDJSON. Nine hard-coded theological guardrails baked into every prompt with regex-checked outputs. Study result caching with normalized cache keys. Prompt caching for the static rules block at 10% input cost. Full Stripe subscription billing with trial support. Verified-source scripture retrieval from vendored KJV (never model-generated). Caught and patched a pre-launch RLS vulnerability that would have let any authenticated user grant themselves unlimited credits.
 *Stack: Next.js 16, React 19, TypeScript, Tailwind v4, Supabase (Postgres + RLS), Anthropic SDK, Stripe, Resend, Vercel.*
 
-**Business Succession Group portal (portal.businesssuccessiongroup.com).** Live gated B2B acquisition marketplace connecting qualified buyers with confidential M&A deals for a Canadian advisory firm. Three-tier freemium model (public pipeline → verified buyer → $500/year premium with early access). Digital NDA signature capture with in-portal PDF generation, 6-step buyer intake form, admin moderation queues, bi-directional Zoho CRM sync via OAuth edge functions. Multi-layered RBAC via Supabase RLS with BEFORE-triggers preventing privilege escalation, a public "blind columns" view separated from confidential data at the database layer, and full Stripe subscription billing with webhook-driven tier changes. Real-time admin notification feed with per-admin read state.
+**Gated M&A marketplace for a Canadian M&A advisory firm.** Live gated B2B acquisition marketplace connecting qualified buyers with confidential M&A deals. Three-tier freemium model (public pipeline, then verified buyer, then $500/year premium with early access). Digital NDA signature capture with in-portal PDF generation, 6-step buyer intake form, admin moderation queues, bi-directional Zoho CRM sync via OAuth edge functions. Multi-layered RBAC via Supabase RLS with BEFORE-triggers preventing privilege escalation, a public "blind columns" view separated from confidential data at the database layer, and full Stripe subscription billing with webhook-driven tier changes. Real-time admin notification feed with per-admin read state.
 *Stack: React 19, Vite, TypeScript, Tailwind v4, Supabase (Postgres + RLS + storage + edge functions), Stripe, Zoho CRM, Resend, react-signature-canvas, jspdf.*
 
 **Prestige Ride reporting platform.** The internal reporting product the whole 20+ person team works from, which I own end to end, aggregating transaction data across MongoDB (source of truth) and Supabase into three interconnected dashboards. Custom incremental MongoDB-to-Postgres sync engine (3 pipelines, 72 migrations of schema evolution). Admin-defined custom columns using Postgres expression indexes over jsonb paths, making arbitrary MongoDB document fields sortable and filterable. Upstash Redis for per-user rate limiting and column-library caching. Full RBAC (Admin/Manager/Viewer plus custom roles) with role-scoped CSV export and per-user saved views. Fixie SOCKS proxy for IP-restricted MongoDB Atlas access. First built on Next.js and Supabase, hosted on Vercel with a MongoDB sync, then rebuilt as a React front end on a Laravel (PHP) API, with 100K+ records migrated into MySQL.
@@ -19,7 +19,7 @@ Right now I'm the AI Automation Engineer at [OPT Link Hub](https://www.optlinkhu
 
 **Prestige Ride automations.** n8n workflows for Authorize.net verification on 5,000+ payments a month and for the company newsletter, plus GoHighLevel automation workflows and validated data imports into the CRM.
 
-**[StellaFlo](https://stellaflo.com).** My own productized service for digital agency owners.
+**[StellaFlo](https://stellaflo.com).** My own studio. I finish, fix and run apps founders built fast with AI tools, so they hold up with real users. It starts with a 3-day Production Check: a plain-English report of every security gap, broken flow and launch blocker, ranked by risk, with a fixed price to fix them.
 
 ---
 
@@ -27,9 +27,9 @@ Right now I'm the AI Automation Engineer at [OPT Link Hub](https://www.optlinkhu
 
 Public and verifiable:
 
-- **Upwork.** Top Rated, Top 10% of Automation Talent, 100% Job Success. 3,614 hours across 100 projects. $60,000+ earned. [upwork.com/freelancers/ehassannawaz](https://www.upwork.com/freelancers/ehassannawaz)
+- **Upwork.** Top Rated, Top 10% of Automation Talent, 100% Job Success. 3,614 hours across 90+ projects. $60,000+ earned. [upwork.com/freelancers/ehassannawaz](https://www.upwork.com/freelancers/ehassannawaz)
 - **Contra.** 5.00 rating, $50,000+ earned on-platform. [contra.com/ehassannawaz](https://contra.com/ehassannawaz)
-- **LinkedIn.** Named recommendations from Scott Duke and Eve Duke of Business Succession Group. [linkedin.com/in/ehassannawaz](https://www.linkedin.com/in/ehassannawaz)
+- **LinkedIn.** Named recommendations from Scott Duke and Eve Duke at a Canadian M&A advisory firm. [linkedin.com/in/ehassannawaz](https://www.linkedin.com/in/ehassannawaz)
 
 Selected numbers from public portfolio work:
 
@@ -46,7 +46,7 @@ Selected numbers from public portfolio work:
 
 > "Hassan did an incredible job helping us implement lead tracking automations for our roofing company's ad campaign tracking, form fills on their landing page, and connecting the follow-up sequence." (Upwork, SB Pro Roofing)
 
-> "Hassan is an incredibly talented and dependable addition to our team, with a strong ability to design and implement thoughtful automation solutions. He consistently delivers high-quality work and is a pleasure to collaborate with." (Scott Duke, Business Succession Group, LinkedIn recommendation)
+> "Hassan is an incredibly talented and dependable addition to our team, with a strong ability to design and implement thoughtful automation solutions. He consistently delivers high-quality work and is a pleasure to collaborate with." (Scott Duke, a Canadian M&A advisory firm, LinkedIn recommendation)
 
 ---
 
@@ -98,13 +98,13 @@ Native iOS / Android publishing and Apple App Store / Google Play submissions ar
 
 ### Currently
 
-Ongoing with Business Succession Group (August 2025 to present). Building [StellaFlo](https://stellaflo.com) alongside. Room for one more serious client engagement, Claude SaaS or senior full-stack.
+Full-time at OPT Link Hub, an ongoing contract with a Canadian M&A advisory firm (since August 2025), and [StellaFlo](https://stellaflo.com), where I take two launch projects a month.
 
-**Book a 30-min Agency Systems Audit call:** [calendly.com/ehassannawaz/agency-systems-audit](https://calendly.com/ehassannawaz/agency-systems-audit)
+**Book a 30-minute intro call:** [calendly.com/ehassannawaz/intro-call](https://calendly.com/ehassannawaz/intro-call)
 
 ### Get in touch
 
-- **Book a call:** [Agency Systems Audit (30 min)](https://calendly.com/ehassannawaz/agency-systems-audit)
+- **Book a call:** [30-minute intro call](https://calendly.com/ehassannawaz/intro-call)
 - Website: [stellaflo.com](https://stellaflo.com)
 - LinkedIn: [linkedin.com/in/ehassannawaz](https://www.linkedin.com/in/ehassannawaz)
 - Upwork: [upwork.com/freelancers/ehassannawaz](https://www.upwork.com/freelancers/ehassannawaz)
