@@ -27,8 +27,8 @@ Right now I'm the AI Automation Engineer at [OPT Link Hub](https://www.optlinkhu
 
 Public and verifiable:
 
-- **Upwork.** Top Rated, Top 10% of Automation Talent, 100% Job Success. 3,614 hours across 90+ projects. $60,000+ earned. [upwork.com/freelancers/ehassannawaz](https://www.upwork.com/freelancers/ehassannawaz)
-- **Contra.** 5.00 rating, $50,000+ earned on-platform. [contra.com/ehassannawaz](https://contra.com/ehassannawaz)
+- **Upwork.** Top Rated, Top 10% of Automation Talent, 100% Job Success. 3,614 hours across 90+ projects. [upwork.com/freelancers/ehassannawaz](https://www.upwork.com/freelancers/ehassannawaz)
+- **Contra.** 5.00 rating. [contra.com/ehassannawaz](https://contra.com/ehassannawaz)
 - **LinkedIn.** Named recommendations from Scott Duke and Eve Duke at a Canadian M&A advisory firm. [linkedin.com/in/ehassannawaz](https://www.linkedin.com/in/ehassannawaz)
 
 Selected numbers from public portfolio work:
